@@ -1,9 +1,10 @@
 "use client"
+import { NextUIProvider } from "@nextui-org/react"
 import { PropsWithChildren } from "react"
 
 export const  Providers= ({children}: PropsWithChildren) => {
     
-    return (children)
+    return <NextUIProvider>{children}</NextUIProvider> 
 }
 
 

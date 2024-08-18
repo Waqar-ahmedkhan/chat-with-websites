@@ -5,7 +5,7 @@ import { ArrowRight, Globe, MessageSquare, Shield, Zap } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 
-const FeatureCard = ({ icon: Icon, title, description }) => (
+const FeatureCard = ({ icon: Icon, title, description }: { icon: any, title: string, description: string }) => (
   <motion.div
     className="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-6 flex flex-col items-center text-center"
     whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(255,255,255,0.2)" }}
